@@ -1,3 +1,5 @@
+package ghostlypolecat;
+
 import de.gurkenlabs.litiengine.Game;
 
 public class gameRunner {
