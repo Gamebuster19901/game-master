@@ -15,3 +15,7 @@ dependencies {
 
   implementation("de.gurkenlabs:litiengine:0.5.2")
 }
+
+application {
+  mainClass = 'gameRunner'
+}
