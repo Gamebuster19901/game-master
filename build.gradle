@@ -14,4 +14,11 @@ repositories {
 dependencies {
 
   implementation("de.gurkenlabs:litiengine:0.5.2")
+}jar {
+  manifest {
+    attributes(
+      'Class-Path': configurations.runtimeClasspath.collect { it.getName() }.join(' '),
+      'Main-Class': 'ghostlypolecat.GameRunner'
+    )
+  }
 }
