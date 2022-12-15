@@ -16,6 +16,17 @@ application {
   mainClass = "ghostlypolecat.GameRunner"
 }
 
+sourceSets {
+	main {
+		java {
+			srcDir 'src/main/java'
+		}
+		resources {
+			srcDir 'src/main/resources'
+		}
+	}
+}
+
 jar {
   manifest {
     attributes(
