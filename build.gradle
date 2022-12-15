@@ -1,9 +1,6 @@
 plugins {
-    
-  java
-
-  application
-
+  id('java')
+  id('application')
 }
 
 repositories {
@@ -12,9 +9,14 @@ repositories {
 }
 
 dependencies {
-
   implementation("de.gurkenlabs:litiengine:0.5.2")
-}jar {
+}
+
+application {
+  mainClass = "ghostlypolecat.GameRunner"
+}
+
+jar {
   manifest {
     attributes(
       'Class-Path': configurations.runtimeClasspath.collect { it.getName() }.join(' '),
