@@ -2,7 +2,7 @@ package ghostlypolecat;
 
 import de.gurkenlabs.litiengine.Game;
 
-public class gameRunner {
+public class GameRunner {
 
   public static void main(String[] args) {
 
